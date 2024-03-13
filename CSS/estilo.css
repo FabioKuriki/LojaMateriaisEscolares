@@ -1,0 +1,93 @@
+.lancamentos{
+    display: grid; 
+    grid-template-columns: 33% 33% 33%; 
+    grid-template-rows: auto;
+    grid-gap: 1%; 
+}
+
+#l1{
+    grid-column-start: 1;/*Começo da coluna*/
+    grid-column-end: 1;/*Fim da coluna*/
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#l2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#l3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.imagemLancamentos{
+    width: 100%; /*Larugura*/
+    height: 50%; /*Altura*/
+    object-fit: cover; /* Se adapte ao catalogo */
+}
+
+h3{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.preco{
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+nav{
+    background-color: rgb(37, 29, 107);
+    color: rgb(255, 255, 255);
+}
+
+#cabecalhoPrincipal{
+    background-color: rgb(37, 29, 107);
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    padding-bottom: 0.5%;
+    padding-top: 0.05%;
+}
+
+#imagemInicial{
+    display: grid; 
+    grid-template-columns: auto; 
+    grid-template-rows: auto;
+    grid-gap: 1%; 
+    background-image: url(../Imagens/fundoEscolar.jpg);
+}
+
+#fundoEscolar{/*Olhar dps*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+}
+
+ul{
+    display: inline;
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+    display: inline;
+    padding: 2% 8% 2% 8%;
+    font-size: 115%;
+}
+
+
