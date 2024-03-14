@@ -11,27 +11,31 @@
     <body>
         <header>
             <section id="cabecalhoPrincipal">
-                <h1>EscolaBrasil</h1>
+                <h1 id="nomeLoja">EscolaBrasil</h1>
+                <input id="pesquisa" type="text" placeholder="O que procura?"> <!--Barra de pesquisa -->
+                <a id="linkLogin" href="telaLogin.html"><h3 id="login">Entre ou cadastre-se</h3></a>
             </section>
             <nav><!-- Menu -->
                 <ul>
-                    <li>Paginal Inicial</li>
-                    <li>Cadernos</li>
-                    <li>Mochilas</li>
-                    <li>Diversos</li>
+                    <a class="linkMenu" href="index.html"><li>Paginal Inicial</li></a>
+                    <a class="linkMenu"><li>Cadernos</li></a>
+                    <a class="linkMenu"><li>Mochilas</li></a>
+                    <a class="linkMenu"><li>Diversos</li></a>
                 </ul>
             </nav>
         </header>
         <body>
             <section id="imagemInicial">
-                <img id="fundoEscolar" src="../Imagens/fundoEscolar.jpg" alt="fundoMateriaisEscolares">
+                Venha começar as suas aulas conosco <br>!!!
             </section>
-            <h2>Lançamentos</h2>
             <section class="lancamentos">
+                <h2 id="textoLancamentos">Lançamentos</h2>
                 <article id="l1">
-                    <img class="imagemLancamentos" src="../Imagens/cadernoDino.png" alt="cadernoDino"/>
-                    <h3>Caderno DinoRadical</h3>
-                    <p class="preco">R$ 25,00</p>
+                    <a id="acessarProduto" href="cadernoDinoRadical.html">
+                        <img class="imagemLancamentos" src="../Imagens/cadernoDino.png" alt="cadernoDino"/>
+                        <h3>Caderno DinoRadical</h3>
+                        <p class="preco">R$ 25,00</p>
+                    </a>
                 </article>
                 <article id="l2">
                     <img class="imagemLancamentos" src="../Imagens/canetaPrata.png" alt="canetaPrata"/>
@@ -43,14 +47,44 @@
                     <h3>Mochila básica azul</h3>
                     <p class="preco">R$ 30,00</p>
                 </article>
+                <article id="l4">
+                    <img class="imagemLancamentos" src="../Imagens/estojo.png" alt="estojoRosquinha"/>
+                    <h3>Estojo rosquinha</h3>
+                    <p class="preco">R$ 10,00</p>
+                </article>
             </section>
-            <section><!-- historia e formas de contato-->
-
+            <section id="empresa"><!-- historia e formas de contato-->
+                <article id="informacaoEmpresa">
+                    <article id="institucional">
+                        <h3 class="parteEmpresa">Institucional</h3>
+                       <a id="quemSomos" href="quemSomos.html">Quem somos <br></a>
+                       <a>Nossas lojas<br></a>
+                       <a>Trabalhe conosco</a>
+                    </article>
+                    <article id="suporte">
+                        <h3 class="parteEmpresa">Ajuda e Suporte</h3>
+                        <a>Fale Conosco<br></a>
+                        <a>Perguntas Frequentes<br></a>
+                        <a>Políticas de Entrega</a>
+                    </article>
+                </article>
+                <article id="contato"> <!--tentar colocar um ícone-->
+                    <h4 id="texto contato">Para mais informações:</h4>
+                    <article id="formasDeContato">
+                        <article id="contato1">
+                            <img class="icones" src="../Imagens/iconeTelefone.png" alt="iconeTelefone"/>
+                            <img class="icones" src="../Imagens/iconeEmail.png" alt="iconeEmail"/>
+                        </article>
+                        <article id="contato2">
+                            <p>(11) 99999-9999<br> <br><br> escolaBrasil@outlook.com</p> 
+                        </article>
+                    </article>
+                </article>
             </section>
         </body>
         <!-- Rodapé --> 
         <footer>
-            
+            Desenvolvido por Fabio
         </footer>
         <!-- Fim do rodapé --> 
     </body>

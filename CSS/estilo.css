@@ -1,81 +1,67 @@
-.lancamentos{
-    display: grid; 
-    grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: auto;
-    grid-gap: 1%; 
-}
-
-#l1{
-    grid-column-start: 1;/*Começo da coluna*/
-    grid-column-end: 1;/*Fim da coluna*/
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-#l2{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-#l3{
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.imagemLancamentos{
-    width: 100%; /*Larugura*/
-    height: 50%; /*Altura*/
-    object-fit: cover; /* Se adapte ao catalogo */
-}
-
-h3{
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
-.preco{
-    text-align: center;
-    font-weight: bold;
-    font-size: 150%;
-}
-
-nav{
-    background-color: rgb(37, 29, 107);
-    color: rgb(255, 255, 255);
+body{
+    margin: 0%;
+    padding: 0%;
 }
 
 #cabecalhoPrincipal{
     background-color: rgb(37, 29, 107);
     color: rgb(255, 255, 255);
     font-size: 150%;
+    font-family: 'cartoon';
+    font-weight: bold;
     padding-bottom: 0.5%;
     padding-top: 0.05%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%; 
 }
 
-#imagemInicial{
-    display: grid; 
-    grid-template-columns: auto; 
-    grid-template-rows: auto;
-    grid-gap: 1%; 
-    background-image: url(../Imagens/fundoEscolar.jpg);
-}
-
-#fundoEscolar{/*Olhar dps*/
+#nomeLoja{
+    padding-left: 5%;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
-    width: 100%;
-    height: 25%;
-    object-fit: cover;
+}
+
+#pesquisa{
+    margin:5%;
+    font-size: 80%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#login{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-left: 30%;
+    padding-top: 1%;
+}
+
+#linkLogin{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#login:hover{
+    color: #dd7b0c;
+}
+
+nav{
+    background-color: rgb(19, 9, 110);
+    color: rgb(255, 255, 255);
+}
+
+.linkMenu{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.linkMenu:hover{
+    color: #dd7b0c;
 }
 
 ul{
@@ -86,8 +72,490 @@ li{
     list-style: none;
     font-weight: bold;
     display: inline;
-    padding: 2% 8% 2% 8%;
+    padding: 2% 9% 2% 10%;
     font-size: 115%;
 }
 
+.lancamentos{
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: auto;
+}
 
+/*Imagem um de lançamento*/
+#l1{ 
+    grid-column-start: 1;/*Começo da coluna*/
+    grid-column-end: 1;/*Fim da coluna*/
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+/*Fim de imagem um de lançamento*/
+
+#l1:hover, #l2:hover, #l3:hover, #l4:hover{
+    border: 2px solid #000;
+}
+
+/*Imagem dois de lançamento*/
+#l2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+/*Fim de imagem dois de lançamento*/
+
+/*Imagem três de lançamento*/
+#l3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+/*Fim de imagem três de lançamento*/
+
+/*Imagem quatro de lançamento*/
+#l4{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+/*Fim de imagem quatro de lançamento*/
+
+.imagemLancamentos{
+    width: 50%; /*Larugura*/
+    height: 60%; /*Altura*/
+    object-fit: cover; /* Se adapte ao catalogo */
+}
+
+.preco{
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+@font-face { /*Adicionando fonte*/
+    font-family: 'cartoon';
+    src: url(../Fontes/orange\ juice\ 2.0.ttf);
+}
+
+#imagemInicial{
+    background-image: url(../Imagens/fundoEscolar.jpg);
+    padding: 8%;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'cartoon';
+    color: #fafafa;
+}
+
+#textoLancamentos{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: 'cartoon';
+    text-align: center;
+    border-bottom: 4px solid #ec1414;
+}
+
+.lancamentos{
+    font-family: 'cartoon';
+    text-align: center;
+}
+
+#empresa{
+    background-color: #e9e3e3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#informacaoEmpresa{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#institucional{
+    padding-left: 1%;
+    padding-right: 2%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+#quemSomos{
+    text-decoration: none;
+    color: #000;
+}
+
+#quemSomos:hover{
+    text-decoration: underline;
+}
+
+.parteEmpresa{
+    color: #2943b9;
+}
+
+#suporte{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-right: 2px solid;
+}
+
+#contato{
+    padding-left: 10%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#textoContato{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#formasDeContato{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+#contato1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.icones{
+    width: 50%;
+    height: 20%;
+    margin-right: 50%;
+    margin-top: 60%;
+}
+
+#contato2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-right: 70%;
+    margin-top: 3%;
+}
+
+footer{
+    text-align: center;
+}
+
+#acessarProduto{
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 767px){ /*Celular*/
+
+    body{
+        margin-right: -93%;
+        padding: 0%;
+    }
+
+    #cabecalhoPrincipal{
+        background-color: rgb(37, 29, 107);
+        color: rgb(255, 255, 255);
+        font-size: 100%;
+        font-family: 'cartoon';
+        font-weight: bold;
+        padding-bottom: 0.5%;
+        padding-top: 0.05%;
+        display: grid;
+        grid-template-columns: 30% 40% 30%; 
+    }
+
+    #nomeLoja{
+        margin-top: 5%;
+        margin-left: 60%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #pesquisa{
+        margin-top:20%;
+        margin-bottom: 25%;
+        margin-left: -70%;
+        margin-right: 50%;
+        font-size: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #login{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: -215%;
+        margin-top: 45%;
+        padding-top: 1%;
+        font-size: 150%;
+    }
+    
+    nav{
+        background-color: rgb(19, 9, 110);
+        color: rgb(255, 255, 255);
+    }
+
+    .linkMenu{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .linkMenu:hover{
+        color: #dd7b0c;
+    }
+
+    ul{
+        display: inline;
+    }
+
+    li{
+        list-style: none;
+        font-weight: bold;
+        display: inline;
+        padding: 2% 9% 2% 10%;
+        font-size: 115%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023){ /*Tablet*/
+    
+}
+
+@media screen and (min-width: 1024px){ /*Desktop*/
+    
+}
+/*-----------------------------------Tela login-----------------------------------*/
+
+#telaLogin{
+    background-color: #c0bcbc;
+    text-align: center;
+    margin: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 1%;
+}
+
+.caixaLogin{
+    font-size: 115%;
+}
+
+#botaoEntrar{
+    border: 2px solid #000;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 150%;
+    background-color: #1dcf35;
+}
+
+#botaoCadastro{
+    border: 2px solid #000;
+    margin-top: -3%;
+    margin-left: 44%;
+    margin-right: 44%;
+    text-align: center;
+    font-size: 150%;
+}
+
+#nomeEmpresa{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#empresa2{
+    background-color: #e9e3e3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 9.50%;
+}
+
+/*--------------------------------Tela Produto-----------------------------------------*/
+#parteProduto{
+    margin-top: 5%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+}
+
+#dadosProduto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid;
+    border-radius: 5%;
+}
+
+#cadernoDino{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid;
+    border-radius: 5%;
+    width: 80%;
+    height: 80%;
+    margin-left: 15%;
+    margin-top: 11%;
+}
+
+
+#informacaoProduto{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    text-align: justify;
+}
+
+#informacaoProduto1{
+    border-bottom: 2px solid;
+}
+
+#parteCompra{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid;
+    border-radius: 5%;
+    margin-right: 35%;
+    margin-left: 3%;
+    margin-bottom: 45%;
+}
+
+#parteFrete{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 25%;
+    margin-left: 3%;
+    margin-right: 35%;
+    margin-bottom: 30%;
+    border-radius: 5%;
+    border: 1px solid;
+}
+
+#precoDino{
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#pix{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 100%;
+}
+
+#botaoComprar{
+    border: 2px solid;
+    margin-left: 42%;
+    font-size: 150%;
+    padding: 1%;
+    border-radius: 15%;
+    background-color: #d32929;
+    font-weight: bold;
+}
+
+#campoCep{
+    font-size: 110%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+#textoFrete{
+    font-size: 130%;
+    margin-left: 5%;
+}
+
+#botaoCalcular{
+    border: 2px solid;
+    margin-left: 15%;
+    font-size: 150%;
+    padding: 1%;
+    border-radius: 15%;
+    color: #d32929;
+    font-weight: bold;
+}
+
+#textoQuemJaViu{
+    font-family: 'cartoon';
+    border-bottom: 4px solid #ec1414;
+    margin-left: 10%;
+    margin-right: 70%;
+    margin-top: 3%;
+}
+
+.quemJaViu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    font-family: 'cartoon';
+}
+
+
+/*----------------------------------------------Tela Empresa-----------------------------------------------------------*/
+
+#fundoSobreEmpresa{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(../Imagens/fundoEscolar2.jpg);
+    padding: 2%;
+}
+
+#tituloUm{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-left: 80%;
+    font-size: 300%;
+}
+
+#tituloDois{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: 'cartoon';
+    margin-left: 1%;
+    font-size: 300%;
+}
+
+#historia{
+    border-bottom: 2px solid;
+}
+#sobreEmpresa{
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: justify;
+}
