@@ -258,7 +258,7 @@ footer{
 @media screen and (max-width: 767px){ /*Celular*/
 
     body{
-        margin-right: 45.9%;
+        margin-right: 46%;
         padding: 0%;
     }
 
@@ -277,7 +277,7 @@ footer{
 
     #nomeLoja{
         margin-top: 5%;
-        margin-left: 120%;
+        margin-left: 135%;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
@@ -301,7 +301,7 @@ footer{
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 1;
-        margin-left: -165%;
+        margin-left: -140%;
         margin-top: 45%;
         padding-top: 1%;
         font-size: 150%;
@@ -333,10 +333,11 @@ footer{
         display: inline;
         padding: 2% 10% 2% 30%;
         font-size: 115%;
+        margin-left: 7%;
     }
 
     .li2{
-        margin-left: 13%;
+        margin-left: 15%;
     }
 
     #imagemInicial{
@@ -479,7 +480,7 @@ footer{
         width: 50%;
         height: 20%;
         margin-right: 50%;
-        margin-top: 100%;
+        margin-top: 75%;
     }
     
     #contato2{
@@ -497,13 +498,106 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023){ /*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #nomeLoja{
+        padding-left: 10%;
+        
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #pesquisa{
+        margin:10%;
+        
+        font-size: 80%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #login{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-left: 10%;
+        padding-top: 1%;
+    }
+
+    #linkLogin{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    #login:hover{
+        color: #dd7b0c;
+    }
+
+    nav{
+        background-color: rgb(19, 9, 110);
+        color: rgb(255, 255, 255);
+    }
     
+    .linkMenu{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .linkMenu:hover{
+        color: #dd7b0c;
+    }
+    
+    ul{
+        display: inline;
+    }
+    
+    li{
+        list-style: none;
+        font-weight: bold;
+        display: inline;
+        padding: 2% 9% 2% 6%;
+        font-size: 115%;
+    }
+
+    .lancamentos{
+        display: grid; 
+        grid-template-columns: 25% 25% 25% 25%; 
+        grid-template-rows: auto;
+        font-family: 'cartoon';
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #contato1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .icones{
+        width: 50%;
+        height: 20%;
+        margin-right: 50%;
+        margin-top: 110%;
+    }
+    
+    #contato2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-right: 20%;
+        margin-top: 5%;
+    }
+
 }
 
-@media screen and (min-width: 1024px){ /*Desktop*/
-    
-}
+
 /*-----------------------------------Tela login-----------------------------------*/
 
 #telaLogin{
@@ -555,6 +649,7 @@ footer{
         margin: 5%;
         margin-left: 35%;
         margin-right: -50%;
+        margin-top: 15%;
         padding: 1%;
     }
     
@@ -586,6 +681,18 @@ footer{
         margin-right: -85%;
         margin-top: 20%;
     }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #telaLogin{
+        background-color: #c0bcbc;
+        text-align: center;
+        margin: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 1%;
+    }
 }
 
 /*--------------------------------Tela Produto-----------------------------------------*/
@@ -876,6 +983,66 @@ footer{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #parteCompra{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border: 1px solid;
+        border-radius: 5%;
+        margin-right: 20%;
+        margin-left: 3%;
+        padding-bottom: 5%;
+    }
+    
+    #parteFrete{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-top: -45%;
+        margin-left: 3%;
+        margin-right: 20%;
+        margin-bottom: 25%;
+        border-radius: 5%;
+        border: 1px solid;
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    
+    #precoDino{
+        margin-left: 5%;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    
+    #pix{
+        margin-left: 5%;
+        margin-bottom: 5%;
+        font-size: 100%;
+    }
+    
+    #botaoComprar{
+        border: 2px solid;
+        margin-left: 38%;
+        font-size: 150%;
+        padding: 1%;
+        border-radius: 15%;
+        background-color: #d32929;
+        font-weight: bold;
+    }
+
+    .quemJaViu{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+        font-family: 'cartoon';
+        margin-bottom: 5%;
+    }
+}
+
+
 /*----------------------------------------------Tela Empresa-----------------------------------------------------------*/
 
 #fundoSobreEmpresa{
@@ -921,6 +1088,7 @@ footer{
         background-image: url(../Imagens/fundoEscolar2.jpg);
         padding: 2%;
         margin-right: -85%;
+        grid-row-gap: 10%;
     }
     
     #tituloUm{
@@ -941,7 +1109,7 @@ footer{
         grid-row-end: 2;
         font-family: 'cartoon';
         margin-top: -10%;
-        margin-left: 29%;
+        margin-left: 36%;
         font-size: 300%;
     }
     
@@ -954,4 +1122,18 @@ footer{
         margin-left: 20%;
         text-align: justify;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #tituloUm{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center;
+        margin-left: 65%;
+        font-size: 300%;
+    }
+
 }
