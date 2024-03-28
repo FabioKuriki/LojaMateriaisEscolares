@@ -12,6 +12,14 @@
                 <input id="pesquisa" type="text" placeholder="O que procura?"> <!--Barra de pesquisa -->
                 <a id="linkLogin" href="telaLogin.html"><h3 id="login">Entre ou cadastre-se</h3></a>
             </section>
+            <nav><!-- Menu -->
+                <ul>
+                    <a class="linkMenu" href="index.html"><li>Paginal Inicial</li></a>
+                    <a class="linkMenu"><li class="li2">Cadernos</li></a>
+                    <a class="linkMenu"><li class="li2">Mochilas</li></a>
+                    <a class="linkMenu"><li class="li2">Diversos</li></a>
+                </ul>
+            </nav>
         </header>
         <section id="parteProduto">
             <article id="dadosProduto">
@@ -28,16 +36,18 @@
                     </article>
                 </article>
             </article>
-            <article id="parteCompra">
-                <p id="precoDino">R$ 25,00</p>
-                <p id="pix">Pague com PIX + 3% de desconto</p>
-                <a id="botaoComprar">Comprar</a>
-            </article>
-            <article id="parteFrete">
-                <p id="textoFrete">Frete</p>
-                <input id="campoCep" type="number" placeholder="Insira o seu CEP">
-                <a id="botaoCalcular">Calcular</a>
-            </article>
+            <article id="compras">
+                <article id="parteCompra">
+                    <p id="precoDino">R$ 25,00</p>
+                    <p id="pix">Pague com PIX + 3% de desconto</p>
+                    <a id="botaoComprar">Comprar</a>
+                </article>
+                <article id="parteFrete">
+                    <p id="textoFrete">Frete</p>
+                    <input id="campoCep" type="number" placeholder="Insira o seu CEP">
+                    <a id="botaoCalcular">Calcular</a>
+                </article>
+            </article> 
         </section>
         <h2 id="textoQuemJaViu">Quem viu esse produto, também viu</h2>
         <section class="quemJaViu">
@@ -64,36 +74,33 @@
                 <p class="preco">R$ 15,00</p>
             </article>
         </section>
-        <section id="empresa"><!-- historia e formas de contato-->
-            <article id="informacaoEmpresa">
-                <article id="institucional">
-                    <h3 class="parteEmpresa">Institucional</h3>
-                   <a id="quemSomos" href="quemSomos.html">Quem somos <br></a>
-                   <a>Nossas lojas<br></a>
-                   <a>Trabalhe conosco</a>
-                </article>
-                <article id="suporte">
-                    <h3 class="parteEmpresa">Ajuda e Suporte</h3>
-                    <a>Fale Conosco<br></a>
-                    <a>Perguntas Frequentes<br></a>
-                    <a>Políticas de Entrega</a>
-                </article>
-            </article>
-            <article id="contato"> <!--tentar colocar um ícone-->
-                <h4 id="texto contato">Para mais informações:</h4>
-                <article id="formasDeContato">
-                    <article id="contato1">
-                        <img class="icones" src="../Imagens/iconeTelefone.png" alt="iconeTelefone"/>
-                        <img class="icones" src="../Imagens/iconeEmail.png" alt="iconeEmail"/>
-                    </article>
-                    <article id="contato2">
-                        <p>(11) 99999-9999<br> <br><br> escolaBrasil@outlook.com</p> 
-                    </article>
-                </article>
-            </article>
-        </section>
     </body>
-    <footer>
-        Desenvolvido por Fabio
+    <footer id="empresa">
+        <article id="informacaoEmpresa">
+            <article id="institucional">
+                <h3 class="parteEmpresa">Institucional</h3>
+               <a id="quemSomos" href="quemSomos.html">Quem somos <br></a>
+               <a>Nossas lojas<br></a>
+               <a>Trabalhe conosco</a>
+            </article>
+            <article id="suporte">
+                <h3 class="parteEmpresa">Ajuda e Suporte</h3>
+                <a>Fale Conosco<br></a>
+                <a>Perguntas Frequentes<br></a>
+                <a>Políticas de Entrega</a>
+            </article>
+        </article>
+        <article id="contato"> <!--tentar colocar um ícone-->
+            <h4 id="texto contato">Para mais informações:</h4>
+            <article id="formasDeContato">
+                <article id="contato1">
+                    <img class="icones" src="../Imagens/iconeTelefone.png" alt="iconeTelefone"/>
+                    <img class="icones" src="../Imagens/iconeEmail.png" alt="iconeEmail"/>
+                </article>
+                <article id="contato2">
+                    <p>(11) 99999-9999<br> <br><br> escolaBrasil@outlook.com</p> 
+                </article>
+            </article>
+        </article>
     </footer>
 </html>
